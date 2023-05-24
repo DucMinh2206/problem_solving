@@ -63,4 +63,9 @@ signed main(){
 
     return 0;
 }
-    
+
+// five cards can be formed by two independent set.
+// so we want to calculate the number of one satisfied set which we have in original set.
+// O(n ^ 2) solutions: we iterate all pair cards and increase a count of other cards using map<vector<int>, int>.
+// So ans = a sum of C 2 cnt[i]. 
+// cnt[i] the number of appearence of cards in good set.
